@@ -8,7 +8,11 @@
 </head>
 <body>
     <header>
-          <h1>ArtiBois</h1>
+        <div class="logo">
+        <h1>ArtiBois</h1>   
+        <img src="image/logo_ArtiBois.png" alt="Logo ArtiBois">
+        
+        </div>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
@@ -39,10 +43,22 @@
     <section class="Formulaire">
         <h3>Si vous voulez nous envoyer un message:</h3>
     <form action="#" method="post">
+        <p>Votre genre :</p>
+        <label>
+        <input type="radio" name="genre" value="homme"> Homme
+        </label>
+        <label>
+        <input type="radio" name="genre" value="femme"> Femme
+        </label>
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom"placeholder ="votre nom" required><br>
         <label for="Adresse e-mail">Adresse e-mail :</label>
         <input type="email" id="Adresse e-mail" placeholder="votre Adresse e-mail" required><br>
+        <label for="language">langue :</label>
+        <select id="language"name="langue">
+            <option value="Fr">Français</option>
+            <option value="Eng">English</option>
+        </select>
         <label for="sujet">Sujet :</label>
         <input type="text" id="sujet" placeholder="votre sujet" required><br>
         <label for="message">Message :</label>
