@@ -1,10 +1,8 @@
 
     
-    
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  max-width: 1200px;
+  margin: auto;
 }
 header{
     text-align: center;
@@ -21,7 +19,7 @@ header{
 .logo img {
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 30%;
+  width: 10%;
   height: auto;
 
 } 
@@ -29,7 +27,6 @@ header{
 .logo h1 {
   font-size: 1.8em;
   color: #3b2f2f;
-  margin-top: 50px;
   letter-spacing: 1px;
   
 }
@@ -37,8 +34,11 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  border-radius: 1px solid black;
- gap: 20px; /* espace entre les boutons */
+  gap: 2rem; 
+
+}
+nav li {
+  font-size: 2rem;
 
 }
 
@@ -61,19 +61,19 @@ nav a.active {
   background-color: #b68c46;
   color: #fff;
 }
-section {
+.section_accueil{
   text-align: center;
   padding: 60px 20px;
   
 }
 
-section h2 {
+.section_accueil h2 {
   font-size: 2em;
   color: #4a3b2e;
   margin-bottom: 20px;
 }
 
-section p {
+.section_accueil p {
   max-width: 600px;
   margin: 0 auto;
   font-size: 1.1em;
@@ -87,61 +87,65 @@ footer {
   font-size: 0.9em;
   margin-top: 40px;
 }
-main{
-  padding: 40px 10%;
+.page_services{
+  padding: 40px 2rem;
   background-color: tan;
 }
-h3{
-  display: flex;
-  text-align: left;
+.page_services p{
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
-
-p{display: flex;
-  line-height: 2.0;
-  font-size: 1.1rem;
-  letter-spacing: 1.5px;
-  word-spacing: 0.5px;
-
-}
-section{
-  display: grid;
-}
-
 .services {
   display: grid;
-  gap: 30px;
-  margin-top: 40px;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 2rem;
 }
-article img {
-  width: 50%;
-  border-radius: 10px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+h2 h3{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  display: flex;
+  text-align: center;
+  padding: 10px 0;
+}
+.service img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  display: block;
+  object-fit: cover;
+  border-radius: 2rem;
+  float: initial;
+  
+ 
 }
 
-.services article {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-article p {
-color: forestgreen;
+.service p {
 font-weight: bold;
 font-style: italic;
-margin-bottom: 30px;
+margin-bottom: 2rem;
 }
+
+
 article ul li {
-text-align: left;
+text-align: center;
 list-style-position: inside;
-margin: 15px 0;
-padding-left: 10px;
+margin: 0;
+
 }
 article ol li{
-  text-align: left;
+  text-align: center;
   list-style-position: inside;
-  margin: 15px 0;
+  margin: 0;
   padding-left: 10px;
+  font-size: 2rem;
+}
+form{
+  display: flex;
+  gap: .8rem;
+  justify-content: center;
 }
 
 
