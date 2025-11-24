@@ -346,26 +346,39 @@ article ol li {
 
 .contact > p {
     grid-column: 1 / -1;
+    font-style: italic;
     text-align: center;
     margin-bottom: 2rem;
+}
+.contact_info a  {
+  text-decoration: none;
 }
 
 .contact section,
 .contact aside {
-    background: #fff7ec;
+    background: #c9e1ae;
     padding: 1.5rem;
     border-radius: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(120, 137, 22, 0.06);
 }
 
 .formulaire h3 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 1rem;
+}
+.horaires h3 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.reseaux a {
+  display: grid;
+  padding: 1rem;
+  
+
 }
 
 .form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 1rem 2rem;
 }
 
@@ -377,7 +390,7 @@ article ol li {
 .form input,
 .form select,
 .form textarea {
-    padding: .8rem;
+    padding: .5rem;
     border-radius: .5rem;
     border: 1px solid #ccc;
     font-size: 1rem;
@@ -396,16 +409,15 @@ article ol li {
     margin-top: 1rem;
     padding: .8rem 1.5rem;
     border: none;
-    border-radius: .5rem;
-    background-color: #b68c46;
-    color: white;
+    border-radius: 1rem;
+    background-color: #83e381;
     font-size: 1.1rem;
-    cursor: pointer;
+    cursor: alias;
     transition: .3s;
 }
 
 .btn-submit:hover {
-    background-color: #25b8ae;
+    background-color: #25b839;
 }
 
 .page_tutoriels {
@@ -416,6 +428,10 @@ article ol li {
   text-align: center;
   margin-bottom: 2rem;
   color: #4a3b2e;
+}
+.intro ol >p{
+  font-style: oblique;
+  color: #f58544;
 }
 
 .tutoriels {
@@ -445,6 +461,9 @@ article ol li {
   margin-bottom: 1rem;
   color: #3b2f2f;
 }
+
+/* Titres */
+
 
 /* ============================
    KITS / TUTORIELS
