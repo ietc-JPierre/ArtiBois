@@ -260,20 +260,22 @@ footer {
 
 .page_services {
   padding: 40px 2rem;
-  background-color: tan;
+  /*grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));*/
+  background-color: rgb(250, 248, 245);
 }
 
 .page_services p {
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   margin: auto;
-  padding: 20px;
+  padding: 1rem;
 }
 
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  margin-top: 2rem;
+  grid-template-columns: 200px 1fr 100px;
+  gap: 10px;
+  margin-top: .5rem;
 }
 
 h2, h3 {
@@ -282,18 +284,23 @@ h2, h3 {
   padding: 10px 0;
 }
 
-.service img {
+.services img {
+  display: grid;
+ grid-template-columns: 1fr;
   width: 100%;
   height: auto;
-  display: block;
   object-fit: cover;
   border-radius: 2rem;
-}
 
-.service p {
+}  
+  
+.services p {
   font-weight: bold;
   font-style: italic;
-  margin-bottom: 2rem;
+  margin: auto;
+}
+.services, .conclusion li {
+  display: grid;
 }
 
 /* ============================
@@ -469,19 +476,34 @@ article ol li {
    KITS / TUTORIELS
 ============================ */
 
-/*.grid_kits,
-.grid_tutoriels {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.kits_DIY{
   gap: 2rem;
   padding: 2rem;
+  background-color: #e5f1e5;
+}
+.kits{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: auto;
 }
 
-.grid_kits img,
-.grid_tutoriels img {
+.kits img
+ {
   width: 100%;
   border-radius: 1rem;
+  margin-right: 10%;
+  margin-top: 2rem;
 }
+.kits li {
+  font-family: 'Arial Narrow';
+  color: hwb(254 5% 71% / 0.851);
+}
+.kit_conseils p {
+ text-align:center ;
+
+}
+
 
 /* ============================
    RESPONSIVE DESIGN
