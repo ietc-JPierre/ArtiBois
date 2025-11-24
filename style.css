@@ -1,156 +1,3 @@
-
-    
-/*body {
-  max-width: 1200px;
-  margin: auto;
-}
-header{
-    text-align: center;
-    padding: 20px 0px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgba(193, 170, 143, 0.43);  
-}
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}  
-
-.logo img {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 10%;
-  height: auto;
-
-} 
-
-.logo h1 {
-  font-size: 1.8em;
-  color: #3b2f2f;
-  letter-spacing: 1px;
-  
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem; 
-
-}
-nav li {
-  font-size: 2rem;
-
-}
-
-nav a {
-  text-decoration: none;
-  color: #25b8ae;
-  padding: 10px 18px;
- 
-  border-radius: 8px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-  background-color: #d8b979;
-  color: #fff;
-}
-
-nav a.active {
-  background-color: #b68c46;
-  color: #fff;
-}
-.section_accueil{
-  text-align: center;
-  padding: 60px 20px;
-  
-}
-
-.section_accueil h2 {
-  font-size: 2em;
-  color: #4a3b2e;
-  margin-bottom: 20px;
-}
-
-.section_accueil p {
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 1.1em;
-  color: #555;
-}
-footer {
-  text-align: center;
-  background-color: #3b2f2f;
-  color: #fff;
-  padding: 20px 0;
-  font-size: 0.9em;
-  margin-top: 40px;
-}
-.page_services{
-  padding: 40px 2rem;
-  background-color: tan;
-}
-.page_services p{
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
-.services {
-  display: grid;
- grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  margin-top: 2rem;
-}
-h2 h3{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-  display: flex;
-  text-align: center;
-  padding: 10px 0;
-}
-.service img {
-  width: 100%;
-  height: auto;
-  padding: 0;
-  display: block;
-  object-fit: cover;
-  border-radius: 2rem;
-  float: initial;
-  
- 
-}
-
-.service p {
-font-weight: bold;
-font-style: italic;
-margin-bottom: 2rem;
-}
-
-article{
-  display: grid;
- grid-template-columns: repeat(3, 1fr);
-
-}
-
-
-article ul li {
-list-style-position: inside;
-margin: 0;
-
-}
-article ol li{
-  list-style-position: inside;
-  margin: auto;
-  padding-left: 10px;
-
-}
-.Formulaire{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-}*/
 body {
   max-width: 1200px;
   margin: auto;
@@ -162,7 +9,7 @@ header {
   text-align: center;
   padding: 20px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  background-color: rgba(193, 170, 143, 0.43);
+  background-color: rgba(32, 125, 79, 0.921);
 }
 
 .logo {
@@ -260,21 +107,22 @@ footer {
 
 .page_services {
   padding: 40px 2rem;
-  /*grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));*/
-  background-color: rgb(250, 248, 245);
+  
+  grid-template-columns: repeat(auto-fit, minmax(280px, 3fr));
+  background-color: rgb(204, 246, 204);
 }
 
 .page_services p {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: max-content;
   margin: auto;
   padding: 1rem;
 }
-
 .services {
   display: grid;
-  grid-template-columns: 200px 1fr 100px;
-  gap: 10px;
+  margin: auto;
+  
+  gap: 10px 5rem;
   margin-top: .5rem;
 }
 
@@ -286,7 +134,6 @@ h2, h3 {
 
 .services img {
   display: grid;
- grid-template-columns: 1fr;
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -303,20 +150,6 @@ h2, h3 {
   display: grid;
 }
 
-/* ============================
-   LISTES
-============================ */
-
-/*article ul li,
-article ol li {
-  text-align: center;
-  list-style-position: inside;
-  margin: 0;
-}
-
-article ol li {
-  font-size: 2rem;
-}*/
 article ul,
 article ol {
   max-width: 700px;
@@ -344,7 +177,6 @@ article ol li {
     margin-top: 2rem;
 }
 
-/* Titres */
 .contact h2 {
     grid-column: 1 / -1;
     text-align: center;
@@ -380,8 +212,6 @@ article ol li {
 .reseaux a {
   display: grid;
   padding: 1rem;
-  
-
 }
 
 .form {
@@ -403,13 +233,11 @@ article ol li {
     font-size: 1rem;
 }
 
-/* Ligne complète */
 .form-genre {
     grid-column: 1 / -1;
     margin-bottom: 1rem;
 }
 
-/* Bouton : large, centré, stylé */
 .btn-submit {
     grid-column: 1 / -1;
     margin: auto;
@@ -443,18 +271,16 @@ article ol li {
 
 .tutoriels {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;  /* 3 colonnes desktop */
+  grid-template-columns: 1fr 1fr 1fr;  
   gap: 30px;
 }
 
-/* Style des images */
 .tutoriels img {
   width: 100%;
   border-radius: 1rem;
   margin: 1rem 0;
 }
 
-/* Sections individuelles */
 .tutoriels article,
 .tutoriels aside {
   background: rgba(193, 170, 143, 0.18);
@@ -462,14 +288,12 @@ article ol li {
   border-radius: 1rem;
 }
 
-/* Titres */
 .tutoriels h3 {
   text-align: center;
   margin-bottom: 1rem;
   color: #3b2f2f;
 }
 
-/* Titres */
 
 
 /* ============================
@@ -509,12 +333,12 @@ article ol li {
    RESPONSIVE DESIGN
 ============================ */
 
-/* ----------- MOBILE (<768px) ----------- */
+
+/* MOBILE < 768px */
 @media (max-width: 768px) {
 
   body {
-    max-width: 100%;
-    padding: 0 10px;
+    padding: 0 1rem;
   }
 
   nav ul {
@@ -527,63 +351,87 @@ article ol li {
   }
 
   .logo img {
-    width: 35%;
+    width: 30%;
   }
 
-  .services,
-  .grid_kits,
-  .grid_tutoriels {
+  .section_accueil h2 {
+    font-size: 1.6em;
+  }
+
+  .services {
     grid-template-columns: 1fr;
   }
 
-  .page_services p {
-    padding: 10px;
-    font-size: 1em;
+  .tutoriels {
+    grid-template-columns: 1fr;
   }
 
-  h2, h3 {
-    font-size: 1.4em;
+  .kits {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .form {
+    grid-template-columns: 1fr !important;
+  }
+
+  .btn-submit {
+    width: 100%;
   }
 }
 
-/* ----------- TABLETTE (768px–1024px) ----------- */
-@media (min-width: 768px) and (max-width: 1024px) {
 
-  nav ul {
-    gap: 1.5rem;
-  }
+/* TABLETTES 768px → 1024px */
+
+@media (min-width: 768px) and (max-width: 1024px) {
 
   nav li {
     font-size: 1.6rem;
   }
 
-  .logo img {
-    width: 20%;
-  }
-
-  .services,
-  .grid_kits,
-  .grid_tutoriels {
+  .services {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .page_services p {
-    font-size: 1.1em;
+  .tutoriels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .kits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-/* ----------- DESKTOP (>1024px) ----------- */
+
+/* === DESKTOP > 1024px === */
+
 @media (min-width: 1024px) {
 
-  nav ul {
-    gap: 2.5rem;
+  nav li {
+    font-size: 2rem;
   }
 
-  .services,
-  .grid_kits,
-  .grid_tutoriels {
+  .services {
     grid-template-columns: repeat(3, 1fr);
   }
-}
 
+  .tutoriels {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .kits {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
