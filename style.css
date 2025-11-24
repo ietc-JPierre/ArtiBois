@@ -23,7 +23,7 @@ header {
 .logo img {
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 10%;
+  width: 15%;
   height: auto;
 }
 
@@ -87,10 +87,11 @@ nav a.active {
 
 
 footer {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
   background-color: #3b2f2f;
   color: #fff;
-  padding: 20px 0;
+  padding: .5rem 1rem;
   font-size: 0.9em;
   margin-top: 40px;
 }
